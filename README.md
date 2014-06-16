@@ -43,6 +43,15 @@ Yet, since this is a gemified version, it might be quite possible you are using 
 
 Notice you can alter the width of the select with the `data-width` html attribute.
 
+At last you need to have an JavaScript file to call the actual `selectpicker` method.
+Since the selectpicker is somewhat configurable, i like to have an JavaScript file, corresponding to the CSS file, something like `app/assets/javascripts/bootstrap-select_and_overrides.js`.
+
+Here is a simple sample for this:
+
+    $(document).ready(function() {
+	    $('.selectpicker').selectpicker();
+    });	
+
 ## Contributing
 
 1. Fork it ( https://github.com/[my-github-username]/bootstrap-select-wrapper-rails/fork )
