@@ -1,6 +1,8 @@
 # Bootstrap::Select::Wrapper::Rails
 
-TODO: Write a gem description
+This gem is a simple wrapper for the bootstrap-select plugin.
+It is bundled as a gem to be able to include this 3rd party asset into the asset pipeline, without having to locally import the actual CSS and JavaScript into your project.
+Please see http://silviomoreto.github.io/bootstrap-select/ for the original plugin.
 
 ## Installation
 
@@ -18,7 +20,24 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+1. In your `app/assets/javascripts/application.js` include the following line:
+    `//= require bootstrap-select`
+
+2. In your `app/assets/javascripts/application.css` you can include this line:
+    `*=require bootstrap-select`
+
+However, if you use SASS i advise you to create a specific `bootstrap-select_and_overrides.css.scss` file
+and include the `bootstrap-select.css` via an Import statement:
+    `@Import 'bootstrap-select';`
+    
+A sample HTML markup may then look like this:
+
+    `<select class="selectpicker"><option value="Herr">Herr</option><option value="Frau">Frau</option></select>`
+
+Yet, since this is a gemified version, it might be quite possible you are using it in an Ruby on Rails app, so, for the love of god, here some .html.erb markup for you:
+    `<%= f.select( :salutation, options_for_select( [ ['Herr', 'Herr'], ['Frau', 'Frau'] ] ), { }, { 'data-width' => "100%", :class => "selectpicker"} ) %>`
+
+Notice you can alter the width of the select with the `data-width` html attribute.
 
 ## Contributing
 
