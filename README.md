@@ -32,7 +32,7 @@ and include the `bootstrap-select.css` via an Import statement:
     
 A sample HTML markup may then look like this:
 
-    `<select class="selectpicker"><option value="Herr">Herr</option><option value="Frau">Frau</option></select>`
+    <select class="selectpicker"><option value="Herr">Herr</option><option value="Frau">Frau</option></select>
 
 Yet, since this is a gemified version, it might be quite possible you are using it in an Ruby on Rails app, so, for the love of god, here some .html.erb markup for you:
     `<%= f.select( :salutation, options_for_select( [ ['Herr', 'Herr'], ['Frau', 'Frau'] ] ), { }, { 'data-width' => "100%", :class => "selectpicker"} ) %>`
