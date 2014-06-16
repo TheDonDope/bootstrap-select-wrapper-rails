@@ -5,6 +5,7 @@ module Bootstrap
     module Wrapper
       module Rails
         class Engine < ::Rails::Engine
+        end
       end
     end
   end
