@@ -22,10 +22,12 @@ Or install it yourself as:
 
 1. In your `app/assets/javascripts/application.js` include the following line:
 
+
     //= require bootstrap-select
 
 2. In your `app/assets/javascripts/application.css` you can include this line:
     
+
     *=require bootstrap-select
 
 However, if you use SASS i advise you to create a specific `bootstrap-select_and_overrides.css.scss` file
