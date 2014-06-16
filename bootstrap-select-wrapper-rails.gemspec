@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = Bootstrap::Select::Wrapper::Rails::VERSION
   spec.authors       = ["Christian Dobert"]
   spec.email         = ["chr.dobert@gmail.com"]
-  spec.summary       = ["A simple wrapper around the bootstrap-select plugin"]
-  spec.description   = ["A wrapper around the bootstrap-select plugin. See: http://silviomoreto.github.io/bootstrap-select/"]
-  spec.homepage      = ""
+  spec.summary       = %q{A simple wrapper around the bootstrap-select plugin}
+  spec.description   = %q{A wrapper around the bootstrap-select plugin. See: http://silviomoreto.github.io/bootstrap-select/}
+  spec.homepage      = "https://github.com/dondope/bootstrap-select-wrapper-rails"
   spec.license       = "MIT"
 
   spec.files         = Dir["{lib,vendor}/**/*"]
