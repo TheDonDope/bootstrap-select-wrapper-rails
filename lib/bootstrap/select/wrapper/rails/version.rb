@@ -2,7 +2,7 @@ module Bootstrap
   module Select
     module Wrapper
       module Rails
-        VERSION = "1.5.7"
+        VERSION = "1.6.3"
       end
     end
   end
